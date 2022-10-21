@@ -1,0 +1,39 @@
+#box1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    border:solid 2px black;
+    background-color: blue;
+    position:absolute;
+    top:200px;
+    transition: 2s;
+    animation-name: rainbow-box;
+    animation-duration: 5s;
+}
+@keyframes rainbow-box {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: blue;
+    }
+    
+}
+#box1:hover{
+    background-color: orange;
+    transform: rotate(30deg) translate(200%) scale(5);
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
